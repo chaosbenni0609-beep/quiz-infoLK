@@ -63,10 +63,6 @@ if st.session_state.phase == "start":
     st.divider()
     st.caption("Viel Erfolg! 🚀  –  Erstellt von Felix, Benjamin & Benno")
 
-
-# ════════════════════════════════════════════════════════════════════════════
-# PHASE 2 – QUIZ
-# ════════════════════════════════════════════════════════════════════════════
 elif st.session_state.phase == "quiz":
     thema     = st.session_state.thema
     fragen    = questions[thema]
@@ -74,13 +70,13 @@ elif st.session_state.phase == "quiz":
     gesamt    = len(fragen)
     aktuelle  = fragen[idx]
 
-    # ── Fortschrittsbalken ──────────────────────────────────────────────────
+
     st.markdown(f"**{thema}** – Frage {idx + 1} von {gesamt}")
     st.progress((idx + 1) / gesamt)
     st.markdown(f"⭐ Punkte: **{st.session_state.punkte}**")
     st.divider()
 
-    # ── Frage & Antworten ───────────────────────────────────────────────────
+
     st.subheader(aktuelle["frage"])
 
     if not st.session_state.antwort_gegeben:
