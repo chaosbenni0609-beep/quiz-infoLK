@@ -128,8 +128,8 @@ elif st.session_state.phase == "ergebnis":
 
     st.markdown(
         f'<div class="score-box">'
-        f'Thema: **{thema}**<br>'
-        f'Punkte: **{punkte} / {gesamt}** ({prozent} %)'
+        f'Thema: <strong>{thema}</strong> <br>'
+        f'Punkte: <strong>{punkte} / {gesamt}</strong> ({prozent} %)'
         f'</div>',
         unsafe_allow_html=True
     )
