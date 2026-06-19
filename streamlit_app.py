@@ -31,7 +31,7 @@ init()
 
 st.markdown("""
 <style>
-    .quiz-header   { font-size: 4rem; font-weight: 700; margin-bottom: 0.2rem; }
+    .quiz-header   { font-size: large; font-weight: 700; margin-bottom: 0.2rem; }
     .quiz-sub      { color: #888; margin-bottom: 1.5rem; }
     .feedback-ok   { background:#d4edda; color:#155724; padding:0.8rem 1rem;
                      border-radius:8px; font-weight:600; margin:0.5rem 0; }
