@@ -37,7 +37,7 @@ st.markdown("""
                      border-radius:8px; font-weight:600; margin:0.5rem 0; }
     .feedback-fail { background:#f8d7da; color:#721c24; padding:0.8rem 1rem;
                      border-radius:8px; font-weight:600; margin:0.5rem 0; }
-    .score-box     { background:#BAC3CA; padding:1.5rem; border-radius:12px;
+    .score-box     { background:#e8f4fd; padding:1.5rem; border-radius:12px;
                      text-align:center; font-size:1.3rem; margin:1rem 0; }
     div[data-testid="stButton"] button { width: 100%; }
 </style>
