@@ -112,16 +112,12 @@ elif st.session_state.phase == "quiz":
                 st.session_state.phase = "ergebnis"
             st.rerun()
 
-    # ── Abbrechen ───────────────────────────────────────────────────────────
     st.divider()
     if st.button("↩️ Abbrechen & neu starten"):
         reset()
         st.rerun()
 
 
-# ════════════════════════════════════════════════════════════════════════════
-# PHASE 3 – ERGEBNISSEITE
-# ════════════════════════════════════════════════════════════════════════════
 elif st.session_state.phase == "ergebnis":
     thema  = st.session_state.thema
     punkte = st.session_state.punkte
