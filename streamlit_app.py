@@ -38,7 +38,8 @@ st.markdown("""
     .feedback-fail { background:#f8d7da; color:#721c24; padding:0.8rem 1rem;
                      border-radius:8px; font-weight:600; margin:0.5rem 0; }
     .score-box     { background:#e8f4fd; padding:1.5rem; border-radius:12px;
-                     text-align:center; font-size:1.3rem; margin:1rem 0; }
+                     text-align:center; font-size:1.3rem; margin:1rem 0; 
+                     text-emphasis: filled; text-emphasis-color: red;}
     div[data-testid="stButton"] button { width: 100%; }
 </style>
 """, unsafe_allow_html=True)
@@ -129,7 +130,7 @@ elif st.session_state.phase == "ergebnis":
     st.markdown(
         f'<div class="score-box">'
         f'Thema: **{thema}**<br>'
-        f'Punkte: <strong>{punkte} / {gesamt}</strong> ({prozent} %)'
+        f'Punkte: **{punkte} / {gesamt}** ({prozent} %)'
         f'</div>',
         unsafe_allow_html=True
     )
